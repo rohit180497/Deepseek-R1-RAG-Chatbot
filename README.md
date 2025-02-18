@@ -12,11 +12,11 @@ A **Streamlit-based AI chatbot** that allows students to interact with their **t
 ---
 
 ## 🚀 Features
-✅ **PDF-Based Question Answering** – Upload documents and chat with an AI that retrieves relevant content.  
-✅ **DeepSeek-1.5B AI Model** – Uses **DeepSeek-1.5B** for efficient and context-aware responses.  
-✅ **Retrieval-Augmented Generation (RAG)** – Uses **ChromaDB** for vector-based retrieval.  
-✅ **Streamlit Web Interface** – Simple, user-friendly chatbot interface.  
-✅ **Supports Multiple PDFs** – Process and query multiple textbooks at once.  
+PDF-Based Question Answering – Upload documents and chat with an AI that retrieves relevant content.  
+DeepSeek-1.5B AI Model – Uses DeepSeek-1.5B for efficient and context-aware responses.  
+Retrieval-Augmented Generation (RAG) – Uses ChromaDB for vector-based retrieval.  
+Streamlit Web Interface – Simple, user-friendly chatbot interface.  
+Supports Multiple PDFs – Process and query multiple textbooks at once.  
 ---
 
 ## User Demo
