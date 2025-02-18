@@ -1,6 +1,6 @@
-# 📚 Edumate.ai - AI-Powered Textbook Chatbot
+# 🎓 ScholarChat AI - Smart Textbook Chatbot
 
-![Edumate.ai](https://img.shields.io/badge/DeepSeek-AI%20Chatbot-blue?style=for-the-badge)  
+![ScholarChat AI](https://img.shields.io/badge/DeepSeek-AI%20Chatbot-blue?style=for-the-badge)  
 A **Streamlit-based AI chatbot** that allows students to interact with their **textbooks** using **DeepSeek 1.5B LLM** and **vector-based retrieval** for precise answers from uploaded PDFs.
 
 ---
@@ -17,7 +17,7 @@ A **Streamlit-based AI chatbot** that allows students to interact with their **t
 ## 🏗️ Project Architecture
 
 ```
-📂 Edumate.ai
+📂 ScholarChat AI
 │── 📜 main.py              # Streamlit chatbot UI & interaction
 │── 📜 utils.py             # PDF processing & vector store functions
 │── 📂 chroma_db            # Persisted vector embeddings (generated dynamically)
@@ -31,8 +31,8 @@ A **Streamlit-based AI chatbot** that allows students to interact with their **t
 
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/YOUR_GITHUB_USERNAME/EdumateAI.git
-cd EdumateAI
+git clone https://github.com/YOUR_GITHUB_USERNAME/ScholarChatAI.git
+cd ScholarChatAI
 ```
 
 ### **2️⃣ Create a Virtual Environment**
@@ -92,35 +92,6 @@ streamlit run main.py
 
 ## 📜 Example Query
 
-### **Uploaded Document**  
-📄 _Algebra Chapter 1.pdf_
-
-### **User Question:**
-```
-What is the quadratic formula?
-```
-
-### **Edumate.ai Response:**
-```
-The quadratic formula is used to find the roots of a quadratic equation of the form:
-    ax² + bx + c = 0
-
-The formula is:
-    x = (-b ± sqrt(b² - 4ac)) / 2a
-
-Example:
-For the equation 2x² - 4x - 6 = 0:
-    a = 2, b = -4, c = -6
-
-Using the formula:
-    x = (4 ± sqrt((-4)² - 4(2)(-6))) / (2(2))
-    x = (4 ± sqrt(16 + 48)) / 4
-    x = (4 ± sqrt(64)) / 4
-    x = (4 ± 8) / 4
-
-Thus, x = 3 or x = -1.
-```
-
 ---
 
 ## 🏗️ Tech Stack
@@ -170,5 +141,5 @@ For major changes, open an issue first to discuss your proposal.
 
 ## 📬 Contact
 For issues or feedback, open an issue or contact:
-📧 Email: [your-email@example.com]  
-🌐 GitHub: [github.com/YOUR_GITHUB_USERNAME]
+📧 Email: [kosamkar.r@northeastern.com]  
+🌐 GitHub: [github.com/rohit180497]
