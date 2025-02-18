@@ -3,6 +3,14 @@
 ![ScholarChat AI](https://img.shields.io/badge/DeepSeek-AI%20Chatbot-blue?style=for-the-badge)  
 A **Streamlit-based AI chatbot** that allows students to interact with their **textbooks** using **DeepSeek 1.5B LLM** and **vector-based retrieval** for precise answers from uploaded PDFs.
 
+
+
+## 🏗️ Project Architecture
+
+---
+
+---
+
 ---
 
 ## 🚀 Features
@@ -11,21 +19,6 @@ A **Streamlit-based AI chatbot** that allows students to interact with their **t
 ✅ **Retrieval-Augmented Generation (RAG)** – Uses **ChromaDB** for vector-based retrieval.  
 ✅ **Streamlit Web Interface** – Simple, user-friendly chatbot interface.  
 ✅ **Supports Multiple PDFs** – Process and query multiple textbooks at once.  
-
----
-
-## 🏗️ Project Architecture
-
-```
-📂 ScholarChat AI
-│── 📜 main.py              # Streamlit chatbot UI & interaction
-│── 📜 utils.py             # PDF processing & vector store functions
-│── 📂 chroma_db            # Persisted vector embeddings (generated dynamically)
-│── 📄 README.md            # Project documentation
-│── 📦 requirements.txt     # Python dependencies
-```
-
----
 
 ---
 
