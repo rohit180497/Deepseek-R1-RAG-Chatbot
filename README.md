@@ -27,6 +27,12 @@ A **Streamlit-based AI chatbot** that allows students to interact with their **t
 
 ---
 
+---
+
+## User Demo
+![](assets/scholarchatbot-demo.gif)
+---
+
 ## 🛠️ Installation & Setup
 
 ### **1️⃣ Clone the Repository**
@@ -88,11 +94,6 @@ streamlit run main.py
 - Generates **exam-friendly responses** with examples.
 - Follows **structured, educational guidelines**.
 
----
-
-## 📜 Example Query
-
----
 
 ## 🏗️ Tech Stack
 
