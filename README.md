@@ -8,9 +8,7 @@ A **Streamlit-based AI chatbot** that allows students to interact with their **t
 ## 🏗️ Project Architecture
 
 ---
-
----
-
+![](assets/architecture.gif)
 ---
 
 ## 🚀 Features
@@ -19,7 +17,6 @@ A **Streamlit-based AI chatbot** that allows students to interact with their **t
 ✅ **Retrieval-Augmented Generation (RAG)** – Uses **ChromaDB** for vector-based retrieval.  
 ✅ **Streamlit Web Interface** – Simple, user-friendly chatbot interface.  
 ✅ **Supports Multiple PDFs** – Process and query multiple textbooks at once.  
-
 ---
 
 ## User Demo
