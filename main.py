@@ -4,7 +4,7 @@ from langchain_ollama import ChatOllama
 from utils import process_documents, get_retriever
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 
-# 🎓 New Project Name: ScholarChat AI
+# Project Name: ScholarChat AI
 st.set_page_config(
     page_title="ScholarChat AI 📖",
     page_icon="🤖",
@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# 🎨 Custom prompt template
+#Custom prompt template
 def get_custom_prompt():
     """Define and return the custom prompt template."""
     return ChatPromptTemplate.from_messages([
@@ -33,7 +33,7 @@ def get_custom_prompt():
         )
     ])
 
-# 🧠 Initialize QA Chain
+# Initialize QA Chain
 def initialize_qa_chain():
     if not st.session_state.qa_chain and st.session_state.vector_store:
         llm = ChatOllama(model="deepseek-r1:1.5b",
@@ -48,7 +48,7 @@ def initialize_qa_chain():
         )
     return st.session_state.qa_chain
 
-# 🔄 Initialize chatbot session state
+#Initialize chatbot session state
 def initialize_session_state():
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -57,7 +57,7 @@ def initialize_session_state():
     if "qa_chain" not in st.session_state:
         st.session_state.qa_chain = None
 
-# 🎨 Sidebar: File Upload & Instructions
+#Sidebar: File Upload & Instructions
 def display_sidebar():
     with st.sidebar:
         st.markdown("## 📌 ScholarChat AI - Upload Your Study Material")
@@ -68,14 +68,14 @@ def display_sidebar():
         3. Once processed, start **chatting with ScholarChat AI!** 🎓🤖
         """)
 
-        # 🎯 File uploader
+        # File uploader
         pdfs = st.file_uploader(
             "📂 Upload PDF documents", 
             type="pdf",
             accept_multiple_files=True
         )
 
-        # 🚀 Action Button - Process PDFs
+        #Action Button - Process PDFs
         if st.button("📚 Create Knowledge Base", use_container_width=True):
             if not pdfs:
                 st.warning("⚠️ Please upload PDF documents first!")
@@ -90,19 +90,19 @@ def display_sidebar():
             except Exception as e:
                 st.error(f"❌ Error processing documents: {str(e)}")
 
-# 💬 Chat Interface
+# Chat Interface
 def chat_interface():
     st.title("📖 ScholarChat AI - Your Textbook Assistant")
     st.markdown("_Ask anything about your uploaded documents! ScholarChat AI will provide precise, exam-friendly answers._")
 
-    # 🎨 Custom Chat Styling
+    # Custom Chat Styling
     chat_container = st.container()
     with chat_container:
         for message in st.session_state.messages:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
 
-    # ✍️ User Input
+    #User Input
     if prompt := st.chat_input("🔍 Ask about your documents..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
 
@@ -123,11 +123,11 @@ def chat_interface():
                 except Exception as e:
                     full_response = f"❌ Error: {str(e)}"
 
-            # 💡 Show AI Response
+            #Show AI Response
             message_placeholder.markdown(full_response)
         st.session_state.messages.append({"role": "assistant", "content": full_response})
 
-# 🏁 Main Function
+# Main Function
 def main():
     initialize_session_state()
     display_sidebar()
